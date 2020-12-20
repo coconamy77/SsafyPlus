@@ -1,6 +1,5 @@
 package com.ssafy.springboot.web;
 
-import com.ssafy.springboot.domain.post.Posts;
 import com.ssafy.springboot.service.PostsService;
 
 import com.ssafy.springboot.web.dto.post.PostsListResponseDto;
@@ -25,6 +24,7 @@ import java.util.List;
 public class PostsApiController {
 
     private final PostsService postsService;
+
 
     @ApiOperation(value = "게시글 작성", notes = "게시글을 작성한다.")
     @PostMapping("")
